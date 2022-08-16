@@ -148,5 +148,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
 
 django_heroku.settings(locals())
 
+SESSION_COOKIE_SECURE = False
 CSRF_TRUSTED_ORIGINS = [
     'https://rent-a-movie-be-rodjosh.herokuapp.com', 'http://localhost:8000']
