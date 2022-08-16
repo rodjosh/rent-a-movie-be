@@ -147,3 +147,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
 
 django_heroku.settings(locals())
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://rent-a-movie-be-rodjosh.herokuapp.com', 'http://localhost:8000']
